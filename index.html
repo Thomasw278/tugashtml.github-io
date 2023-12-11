@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title> @wisnu_thomas - 71230975 - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+           Personal Webpage
+        </h1>
+    </header>
+    <section id="foto">
+        <img src="IMG_0304.JPG" width ="350">
+    </section>
+    <section id="tentang-saya">
+        <h2>
+            Thomas Aquinas Ryan Wisnu Adi
+        </h2>
+        <type>
+            @wisnu_thomas
+        </type>
+        <h3>
+            Magelang, Jawa Tengah, Indonesia
+        </h3>
+        <h4>
+            Duta Wacana Christian University
+        </h4>
+    </section>
+    <section id="keterampilan">
+        <h5>
+            Skillset
+            <ol>
+                <li>Coding C</li>
+                <li>Coding HTML</li>
+                <li>Coding CSS, JAVA</li>
+            </ol>
+        </h5>
+    </section>
+    
+    <button id="tombolGantiWarna">Ganti Warna</button>
+
+    <footer>
+    <h6>Thank You For Visiting</h6>
+    </footer>
+
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ['#ff0000', '#0000ff', '##008000', '#ffffff']
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById('tombolGantiWarna')
+        tombolGantiWarna.addEventListener('click',gantiWarnaRandom)
+    </script>
+</body>
+</html>
